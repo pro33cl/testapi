@@ -1,0 +1,38 @@
+### >>> GET Request to "Root Path"
+GET http://{{base_url}}
+
+
+### >>> GET Request to "All Customers Records"
+GET http://{{base_url}}/customers
+
+
+### >>> GET request for a "Specific Customer Record"
+GET http://{{base_url}}/customers/65a962fa49497f8ae77d21a7
+
+
+### >>> POST request to "Create a New Customer Record"
+POST http://{{base_url}}/customers
+Content-Type: application/json
+
+{
+  "name": "Juan Soto Soto",
+  "email": "max@programadores13.org",
+  "whatsapp": "+56961923035"
+}
+
+### >>> PUT Request to "Update Customer Record"
+PUT http://{{base_url}}/customers/65a98c12ca03470c3fa35eff
+Content-Type: application/json
+
+{
+  "name": "Hector Rubilar V",
+  "run": "15980803-3",
+  "email": "hrubilar.1@gmail.com",
+  "whatsapp": "+56987654333",
+  "purchased": "true"
+}
+
+
+
+### >>> DELETE Request to "Destroy a Customer Record"
+DELETE http://{{base_url}}/customers/65a98f7cc096732e87e19b59
